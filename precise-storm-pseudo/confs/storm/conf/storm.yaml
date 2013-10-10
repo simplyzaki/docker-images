@@ -1,0 +1,24 @@
+storm.zookeeper.servers:
+
+	- "localhost"
+
+storm.zookeeper.port: 2181
+
+nimbus.host: "localhost"
+
+storm.local.dir: "/var/storm/tmp"
+
+java.library.path: "/usr/local/lib"
+
+supervisor.slots.ports:
+
+	- 6700
+	- 6701
+	- 6702
+	- 6703
+
+worker.childopts: "-Xmx768m"
+
+nimbus.childopts: "-Xmx512m"
+
+supervisor.childopts: "-Xmx256m"
