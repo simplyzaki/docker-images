@@ -1,5 +1,7 @@
 ## Introduction
 
+A base image based on ubuntu:12.04. Supervisor and OpenSSH server has been pre-installed in this image. It will serve as base image for all the Docker images I intend to create.
+
 ## Usage
 
 ### From Docker Public Repository
@@ -16,7 +18,7 @@
 
 ## Login Details
 
-- root /root
+- root / root
 - ubuntu / ubuntu
 
 ## Installed Packages
