@@ -4,11 +4,11 @@ A base image based on ubuntu:12.04. Supervisor and OpenSSH server has been pre-i
 
 ### Usage
 
-#### From Docker Public Repository
+##### From Docker Public Repository
 
 	> docker pull khanio/precise-base
 
-#### Using Source
+##### Using Source
 
 	> git clone git@github.com:khanio/docker-images.git
 	> cd docker-images/precise-base
