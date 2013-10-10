@@ -1,6 +1,6 @@
 ### Introduction
 
-A base image based on ubuntu:12.04 with Oracle JDK 7 installed. Supervisor and OpenSSH server has been pre-installed in this image.
+A base image based on ubuntu:12.04 with Oracle JDK 7 installed, Scala 2.10.2 and SBT 0.12.4. Supervisor and OpenSSH server has been pre-installed in this image.
 
 ### Usage
 
@@ -23,7 +23,7 @@ A base image based on ubuntu:12.04 with Oracle JDK 7 installed. Supervisor and O
 
 ### Installed Packages
 
-curl python-software-properties nano supervisor git uuid-dev libtool automake pkg-config unzip make build-essential rsync openssh-server ssh oracle-java7-installer oracle-java7-set-default
+curl python-software-properties nano supervisor git uuid-dev libtool automake pkg-config unzip make build-essential rsync openssh-server ssh oracle-java7-installer oracle-java7-set-default sbt scala
 
 ### Configured Services & Ports
 
@@ -32,4 +32,5 @@ curl python-software-properties nano supervisor git uuid-dev libtool automake pk
 
 ### Environment Variables
 
-- $JAVA_HOME = /usr/lib/jvm/java-7-oracle
+- $JAVA_HOME  = /usr/lib/jvm/java-7-oracle
+- $SCALA_HOME = /usr/local/scala
