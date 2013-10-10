@@ -3,14 +3,15 @@
 apt-get update
 
 apt-get -y -f install curl python-software-properties nano supervisor git uuid-dev libtool \
-automake pkg-config unzip make build-essential rsync openssh-server openssh-clients ssh
+automake pkg-config unzip make build-essential rsync openssh-server ssh
 
 mkdir /var/run/sshd
 
 useradd -d /home/ubuntu -m ubuntu
 adduser ubuntu sudo
 
-echo 'root:root' > /root/passwdfile
-RUN cat /root/passwdfile | chpasswd
+su ubuntu -c "echo 'ubuntu:ubuntu' > /home/ubuntu/passwdfile"
+su ubuntu -c "cat /home/ubuntu/passwdfile | chpasswd"
 
-su ubuntu -c 'echo "I am $USER, with uid $UID"'
+echo 'root:root' > /root/passwdfile
+cat /root/passwdfile | chpasswd
