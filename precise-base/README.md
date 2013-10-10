@@ -16,8 +16,8 @@
 
 ## Login Details
 
-- Username: root		Password: root
-- Username: ubuntu	Password: ubuntu
+- root /root
+- ubuntu / ubuntu
 
 ## Installed Packages
 
@@ -26,5 +26,5 @@ curl python-software-properties nano supervisor git uuid-dev libtool automake pk
 
 ## Configured Services & Ports
 
-- Service: supervisord		Port: -
-- Service: sshd				Port: 22
+- supervisord / -
+- sshd / 22
