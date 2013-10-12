@@ -1,4 +1,4 @@
-cdh4-mrv1### Introduction
+### Introduction
 
 A base image based on ubuntu:12.04 with Oracle JDK 7 and Cloudera CDH4 with MapReduceV2 installed on a single node in pseudo-distributed manner. Supervisor and OpenSSH server has been pre-installed in this image.
 
