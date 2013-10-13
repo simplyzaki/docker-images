@@ -35,3 +35,4 @@ curl python-software-properties nano supervisor git uuid-dev libtool automake pk
 
 - $JAVA_HOME = /usr/lib/jvm/java-7-oracle
 - $ES_HOME = /usr/share/elasticsearch
+- $ES_DATA_DIR = /var/data/elasticsearch

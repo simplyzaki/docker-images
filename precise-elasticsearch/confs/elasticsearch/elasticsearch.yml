@@ -37,7 +37,7 @@ cluster.name: TestCluster
 # Node names are generated dynamically on startup, so you're relieved
 # from configuring them manually. You can tie this node to a specific name:
 #
-# node.name: "Franz Kafka"
+node.name: "Franz Kafka"
 
 # Every node can be configured to allow or deny being eligible as the master,
 # and to allow or deny to store the data.
@@ -144,7 +144,7 @@ cluster.name: TestCluster
 
 # Path to directory where to store index data allocated for this node.
 #
-#path.data: /var/data/elasticsearch
+path.data: /var/data/elasticsearch
 
 #
 # Can optionally include more than one location, causing data to be striped across
