@@ -14,6 +14,6 @@ ADD confs/supervisor/conf.d/elasticsearch.conf /etc/supervisor/conf.d/elasticsea
 ADD confs/supervisor/conf.d/rexster-server.conf /etc/supervisor/conf.d/rexster-server.conf
 
 
-EXPOSE 9160 9200 8182
+EXPOSE 9160 9200 8182:8182
 ADD scripts/run.sh /run.sh
 CMD ["/bin/sh", "-e", "/run.sh"]

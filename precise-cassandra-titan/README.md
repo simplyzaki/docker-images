@@ -38,4 +38,4 @@ curl python-software-properties nano supervisor git uuid-dev libtool automake pk
 - $JAVA_HOME = /usr/lib/jvm/java-7-oracle
 
 ### Issues
-Rexster DogHouse console dispalys cant load graphs error.
+Rexster DogHouse console dispalys cant load graphs error. This issue can be fixing by mapping the host and guest port to 8182, as doghouse doesn't work behind proxy.
