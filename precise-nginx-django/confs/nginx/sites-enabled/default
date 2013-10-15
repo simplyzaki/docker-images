@@ -1,0 +1,24 @@
+server {
+    listen 80 default;
+    server_name _;
+
+    access_log /srv/www/hello/logs/access.log;
+    error_log /srv/www/hello/logs/error.log;
+    
+    location /media {
+        alias /srv/www/hello/data/media;
+        expires max;
+        access_log off;
+    }
+    
+    location /static {
+        alias /srv/www/hello/data/static;
+        expires max;
+        access_log off;
+    }
+    
+    location / {
+        include uwsgi_params;
+        uwsgi_pass unix:/srv/www/hello/uwsgi/socket;
+    }
+}
